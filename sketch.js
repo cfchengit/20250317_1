@@ -1,19 +1,9 @@
 let seaweeds = [];
 
 function setup() { //初始設定函數，只會執行一次
-  createCanvas(windowWidth, windowHeight);
+  let canvas =createCanvas(windowWidth, windowHeight);
+  canvas.parent('canvas-container');
   background(0, 0, 0, 0);  //背景顏色，設為透明
-  
-  // 在 HTML 中嵌入 iframe
-  // let iframe = createElement('iframe');
-  // iframe.attribute('src', 'https://www.et.tku.edu.tw');
-  // iframe.attribute('width', '100%');
-  // iframe.attribute('height', '100%');
-  // iframe.style('position', 'absolute');
-  // iframe.style('top', '0');
-  // iframe.style('left', '0');
-  // iframe.style('z-index', '-1'); // 將 iframe 放在動畫背後
-  // iframe.style('pointer-events', 'auto'); // 允許操作 iframe 內容
   
   // 設定線條顏色和寬度
   let colors = ["#ff595e", "#ffca3a", "#8ac926", "#1982c4", "#6a4c93"];
